@@ -370,6 +370,20 @@ def about():
     return render_template("about.html",student = student_data)
 
 
+
+@app.get("/contact")
+def contact():
+    contact_data = {
+        "name":"Cal Naughton",
+        "address":"123 main street",
+        "telephone": "123-456-7890"
+    }
+    return render_template("contact.html", contact = contact_data)
+
+
+
+
+
 if __name__ == "__main__":
     init_db()
     app.run(debug=True)

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+<div class="bg bg-body-secondary">
+    <h1>Contact Information</h1>
+
+    <img width="300" class="rounded-circle my-4" src="https://cdn.costumewall.com/wp-content/uploads/2024/04/cal-naughton-jr-costume.webp" alt="">
+
+    <div><strong>Name:</strong>{{contact["name"]}}</div>
+    <div><strong>Address:</strong>{{contact["address"]}}</div>
+    <div><strong>Telephone:</strong>{{contact["telephone"]}}</div>
+</div>
+
+
+{% endblock content%}
